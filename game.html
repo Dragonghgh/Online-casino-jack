@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <span id="username-display"></span>
+            <span id="chip-count">100</span> chips
+        </div>
+        <button id="settings-btn" class="settings-btn">⚙️</button>
+        <div id="settings-menu" class="settings-menu hidden">
+            <button id="logout-btn">Log Out</button>
+            <button id="sound-toggle">Toggle Sound</button>
+            <button id="change-theme">Change Theme</button>
+        </div>
+    </header>
+    
+    <main class="game-hub">
+        <h1>Choose Your Game</h1>
+        <div class="game-options">
+            <div class="game-option" onclick="window.location.href='slots.html'">
+                <h2>Slot Machines</h2>
+                <p>Try your luck with our exciting slot machines!</p>
+            </div>
+            <div class="game-option" onclick="window.location.href='blackjack.html'">
+                <h2>Blackjack</h2>
+                <p>Test your strategy against the dealer!</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/db.js"></script>
+</body>
+</html>
